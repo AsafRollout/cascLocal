@@ -6,9 +6,9 @@ flag: f24
 flagType: boolean
 description: testing has perm
 labels:
+  - l3
   - l1
   - l2
-  - l3
 
 availableValues:
 

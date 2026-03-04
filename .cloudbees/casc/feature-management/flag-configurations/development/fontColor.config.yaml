@@ -1,0 +1,21 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-configuration
+
+flag: fontColor
+
+enabled: true
+
+stickinessProperty: rox.distinct_id
+
+defaultValue: Red
+
+conditions:
+  - allOf:
+      - property:
+          name: rox.screen_width
+          operator: eq
+          operands:
+            - 1234
+    flagValue:
+      valueWrittenInCode: true

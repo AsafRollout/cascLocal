@@ -1,0 +1,31 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-configuration
+
+flag: rom-bool
+
+enabled: true
+
+stickinessProperty: rox.distinct_id
+
+defaultValue: true
+
+conditions:
+  - allOf:
+      - property:
+          name: rox.screen_width
+          operator: eq
+          operands:
+            - 123
+    flagValue:
+      - percentage: 0
+        from: 2026-01-20T20:25:00Z
+      - percentage: 100
+        from: 2026-01-20T20:30:00Z
+  - allOf:
+      - property:
+          name: rox.screen_width
+          operator: eq
+          operands:
+            - 123
+    flagValue: true

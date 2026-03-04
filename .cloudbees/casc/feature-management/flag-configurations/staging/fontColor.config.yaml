@@ -1,0 +1,37 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-configuration
+
+flag: fontColor
+
+enabled: true
+
+stickinessProperty: rox.distinct_id
+
+defaultValue: Blue
+
+conditions:
+  - allOf:
+      - property:
+          name: rox.screen_width
+          operator: eq
+          operands:
+            - 123
+    flagValue:
+      - percentage: 30
+        option: Red
+      - percentage: 20
+        option: Green
+      - percentage: 20
+        option: Blue
+      - percentage: 20
+        option: Black
+      - percentage: 10
+        option: White
+  - allOf:
+      - property:
+          name: rox.screen_width
+          operator: eq
+          operands:
+            - 123
+    flagValue: Red

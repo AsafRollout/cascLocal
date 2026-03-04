@@ -1,0 +1,37 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-configuration
+
+flag: fontSize
+
+enabled: false
+
+stickinessProperty: rox.distinct_id
+
+defaultValue: 12
+
+conditions:
+  - allOf:
+      - property:
+          name: rox.screen_width
+          operator: eq
+          operands:
+            - 1234
+      - property:
+          name: rox.screen_width
+          operator: eq
+          operands:
+            - 123
+    flagValue: 12
+  - allOf:
+      - property:
+          name: rox.screen_width
+          operator: eq
+          operands:
+            - 1234
+      - property:
+          name: rox.screen_width
+          operator: eq
+          operands:
+            - 123
+    flagValue: 24

@@ -4,10 +4,10 @@ kind: target-group
 
 name: tg12
 
-description: tg12 desc
+description: tg12b desc
 
 conditions:
   anyOf:
     - property:
-        name: rox.screen_width
+        name: rox.screen_height
         operator: is-undefined

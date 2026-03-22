@@ -1,0 +1,13 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: target-group
+
+name: tg12
+
+description: tg12 desc
+
+conditions:
+  anyOf:
+    - property:
+        name: rox.screen_width
+        operator: is-undefined

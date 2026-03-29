@@ -2,13 +2,12 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag
 
-flag: showMessage
-flagType: boolean
+flag: num912
+flagType: number
 description: ""
 labels:
 
 availableValues:
-  - "false"
-  - "true"
+  - "3.12"
 
 isPermanent: false

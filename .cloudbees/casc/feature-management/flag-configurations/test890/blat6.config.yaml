@@ -2,9 +2,9 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag-configuration
 
-flag: fff1
+flag: blat6
 
-enabled: false
+enabled: true
 
 stickinessProperty: rox.distinct_id
 

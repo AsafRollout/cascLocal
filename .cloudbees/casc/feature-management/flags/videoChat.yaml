@@ -2,14 +2,13 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag
 
-flag: fontSize
-flagType: number
+flag: videoChat
+flagType: boolean
 description: ""
 labels:
 
 availableValues:
-  - "12"
-  - "16"
-  - "24"
+  - "false"
+  - "true"
 
 isPermanent: false

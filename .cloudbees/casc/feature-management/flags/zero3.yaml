@@ -2,15 +2,13 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag
 
-flag: rom-bool
+flag: zero3
 flagType: boolean
 description: ""
 labels:
-  - loooonnnnnnggggggg-label
-  - label-1
 
 availableValues:
-  - "true"
   - "false"
+  - "true"
 
 isPermanent: false

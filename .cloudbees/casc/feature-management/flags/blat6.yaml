@@ -2,14 +2,13 @@
 apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag
 
-flag: fff1
+flag: blat6
 flagType: boolean
-description: testing has perm
+description: ""
 labels:
-  - l1
-  - l2
-  - l3
 
 availableValues:
+  - "false"
+  - "true"
 
-isPermanent: true
+isPermanent: false
